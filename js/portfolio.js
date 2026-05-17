@@ -1,4 +1,5 @@
 /* ============================================
+   v1
    PORTFOLIO PAGE - GALLERY INTERACTIONS
    Gallery thumbnail selection and carousel
    ============================================ */

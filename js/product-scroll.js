@@ -1,4 +1,5 @@
 /* ============================================
+   v1
    PRODUCT PAGE - SCROLL-WIPE EFFECT
    Scroll-triggered image sequencing
    ============================================ */

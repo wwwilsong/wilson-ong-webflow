@@ -1,4 +1,5 @@
 /* ============================================
+   v1
    CAROUSEL LIGHTBOX MODULE
    Shared carousel logic for product and portfolio
    ============================================ */
