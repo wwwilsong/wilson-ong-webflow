@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Page Test — Wilson Ong</title>
+
+  <!-- Local CSS files for testing -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/portfolio-page.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div class="portfolio-page">
+  <!-- LEFT COLUMN: FEATURED IMAGE (STICKY) -->
+  <div class="portfolio-image-column">
+    <img id="mainPortfolioImage" src="https://via.placeholder.com/1200x1600/333/fff?text=Featured" class="portfolio-featured-image" alt="Featured Portfolio Image">
+  </div>
+
+  <!-- RIGHT COLUMN: PORTFOLIO DETAILS & GALLERY -->
+  <div class="portfolio-scrollable-area">
+    <div class="portfolio-content">
+      <p class="portfolio-number">1138</p>
+      <h1 class="portfolio-title">GRADUATE COLLECTION</h1>
+      <p class="portfolio-year">2025</p>
+
+      <div class="portfolio-description">
+        <p>Ceramic is a composition of research practices, innovation, and materiality, forming a conceptually cohesive collection and runway exhibition.</p>
+
+        <p>This collection exists as an ongoing body of work and research focused on developing textiles through the employment of alternative materials such as paper yarn, synthetic paper, polymer, and natural resin.</p>
+
+        <p>The designer's practice is concerned with subverting the traditional value systems of fashion and perceived material worth, questioning the modern women's wardrobe while offering an identity of androgyny with an aesthetic informed by masculine uniform.</p>
+      </div>
+
+      <div class="portfolio-credentials">
+        <p>
+          <strong>Graduate Collection</strong><br>
+          Bachelors of Fine Arts<br>
+          Fashion Design<br>
+          (2014)
+        </p>
+
+        <p>
+          <strong>ID Fashion Week - Finalist</strong><br>
+          (2015)
+        </p>
+
+        <p>
+          <strong>ECC NZ Craft Design Awards</strong><br>
+          (2014)<br>
+          Highly Commended
+        </p>
+      </div>
+
+      <!-- PORTFOLIO GALLERY THUMBNAILS -->
+      <div class="portfolio-gallery">
+        <div class="gallery-thumbnail" data-image="https://via.placeholder.com/1200x1600/333/fff?text=Image+1">
+          <img src="https://via.placeholder.com/300x300/333/fff?text=Thumb+1" alt="Portfolio Thumbnail 1">
+        </div>
+
+        <div class="gallery-thumbnail" data-image="https://via.placeholder.com/1200x1600/555/fff?text=Image+2">
+          <img src="https://via.placeholder.com/300x300/555/fff?text=Thumb+2" alt="Portfolio Thumbnail 2">
+        </div>
+
+        <div class="gallery-thumbnail" data-image="https://via.placeholder.com/1200x1600/777/fff?text=Image+3">
+          <img src="https://via.placeholder.com/300x300/777/fff?text=Thumb+3" alt="Portfolio Thumbnail 3">
+        </div>
+
+        <div class="gallery-thumbnail" data-image="https://via.placeholder.com/1200x1600/999/fff?text=Image+4">
+          <img src="https://via.placeholder.com/300x300/999/fff?text=Thumb+4" alt="Portfolio Thumbnail 4">
+        </div>
+
+        <div class="gallery-thumbnail" data-image="https://via.placeholder.com/1200x1600/aaa/fff?text=Image+5">
+          <img src="https://via.placeholder.com/300x300/aaa/fff?text=Thumb+5" alt="Portfolio Thumbnail 5">
+        </div>
+
+        <div class="gallery-thumbnail" data-image="https://via.placeholder.com/1200x1600/bbb/fff?text=Image+6">
+          <img src="https://via.placeholder.com/300x300/bbb/fff?text=Thumb+6" alt="Portfolio Thumbnail 6">
+        </div>
+
+        <div class="gallery-thumbnail" data-image="https://via.placeholder.com/1200x1600/ccc/fff?text=Image+7">
+          <img src="https://via.placeholder.com/300x300/ccc/fff?text=Thumb+7" alt="Portfolio Thumbnail 7">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PORTFOLIO CAROUSEL LIGHTBOX MODAL -->
+<div class="portfolio-carousel-modal">
+  <button class="carousel-close">&times;</button>
+  <button class="carousel-prev">←</button>
+
+  <div class="portfolio-carousel-images">
+    <img src="https://via.placeholder.com/1200x1600/333/fff?text=Image+1" class="carousel-image" alt="Portfolio Image 1">
+    <img src="https://via.placeholder.com/1200x1600/555/fff?text=Image+2" class="carousel-image" alt="Portfolio Image 2">
+    <img src="https://via.placeholder.com/1200x1600/777/fff?text=Image+3" class="carousel-image" alt="Portfolio Image 3">
+    <img src="https://via.placeholder.com/1200x1600/999/fff?text=Image+4" class="carousel-image" alt="Portfolio Image 4">
+    <img src="https://via.placeholder.com/1200x1600/aaa/fff?text=Image+5" class="carousel-image" alt="Portfolio Image 5">
+    <img src="https://via.placeholder.com/1200x1600/bbb/fff?text=Image+6" class="carousel-image" alt="Portfolio Image 6">
+    <img src="https://via.placeholder.com/1200x1600/ccc/fff?text=Image+7" class="carousel-image" alt="Portfolio Image 7">
+  </div>
+
+  <button class="carousel-next">→</button>
+
+  <div class="carousel-counter">
+    <span class="carousel-current">1</span> / <span class="carousel-total">7</span>
+  </div>
+</div>
+
+<!-- Local JS files for testing -->
+<script src="js/carousel.js"></script>
+<script src="js/portfolio.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* ============================================
+   RESPONSIVE STYLES
+   Tablet and mobile breakpoints
+   ============================================ */
+
+/* TABLET (max 1200px) */
+
+@media (max-width: 1200px) {
+  .product-page {
+    grid-template-columns: 1fr;
+  }
+
+  .product-images-column {
+    position: relative;
+    height: 500px;
+  }
+
+  .product-images-container,
+  .product-image-section {
+    height: 500px;
+  }
+
+  .product-details-column {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+}
+
+/* MOBILE (max 768px) */
+
+@media (max-width: 768px) {
+  .product-page {
+    padding: 0;
+  }
+
+  .product-images-column {
+    height: 400px;
+  }
+
+  .product-images-container,
+  .product-image-section {
+    height: 400px;
+  }
+
+  .product-details-column {
+    min-height: auto;
+    padding: 30px 20px;
+  }
+
+  .product-title {
+    font-size: 16px;
+  }
+
+  .product-subtitle {
+    font-size: 11px;
+  }
+
+  .product-price {
+    font-size: 12px;
+  }
+
+  .add-to-bag {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+}
