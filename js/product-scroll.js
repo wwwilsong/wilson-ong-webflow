@@ -15,23 +15,25 @@
       return;
     }
 
-    // Webflow sets overflow-x:hidden on body, which breaks position:sticky in Chrome/Safari.
-    // Switching to 'clip' clips content identically but does not create a scroll container,
-    // so sticky works correctly again.
     document.body.style.overflowX = 'clip';
     document.documentElement.style.overflowX = 'clip';
+
+    // Give the right column enough height so the page is scrollable — one viewport per image.
+    // JS overrides the CSS min-height so it adapts to however many images are on the page.
+    detailsColumn.style.minHeight = (totalImages * 100) + 'vh';
 
     window.addEventListener('scroll', function () {
       const scrollY = window.scrollY || window.pageYOffset;
       const viewportHeight = window.innerHeight;
 
-      // getBoundingClientRect gives viewport-relative position; adding scrollY converts to page-absolute.
       const rect = detailsColumn.getBoundingClientRect();
       const detailsTop = rect.top + scrollY;
       const detailsHeight = detailsColumn.offsetHeight;
 
-      const scrollStart = detailsTop - viewportHeight;
-      const scrollEnd = detailsTop + detailsHeight;
+      // scrollStart: column top reaches viewport top (progress=0, show image 1)
+      // scrollEnd: column bottom reaches viewport bottom (progress=1, show last image)
+      const scrollStart = detailsTop;
+      const scrollEnd = detailsTop + detailsHeight - viewportHeight;
 
       let scrollProgress = (scrollY - scrollStart) / (scrollEnd - scrollStart);
       scrollProgress = Math.max(0, Math.min(1, scrollProgress));
