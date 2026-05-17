@@ -49,11 +49,10 @@
 }
 
 .carousel-images {
-  width: 100%;
-  max-width: 500px;
-  max-height: 90vh;
+  height: 82vh;
+  width: calc(82vh * 4 / 5);
+  max-width: 90vw;
   position: relative;
-  aspect-ratio: 4 / 5;
 }
 
 .carousel-image {
@@ -81,10 +80,11 @@
   transform: translateY(-50%);
   background: none;
   border: none;
-  font-size: 36px;
+  font-size: 28px;
+  font-weight: 100;
   cursor: pointer;
   color: #333;
-  opacity: 0.7;
+  opacity: 0.5;
   transition: opacity 0.3s;
   z-index: 1001;
   width: 50px;
@@ -116,12 +116,9 @@
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Minion Pro', Georgia, serif;
-  font-size: 12px;
-  color: #666;
-  letter-spacing: 0.5px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 10px 20px;
-  border: 1px solid #f0f0f0;
+  font-size: 11px;
+  color: #999;
+  letter-spacing: 0.8px;
   z-index: 1001;
   font-weight: normal;
 }
