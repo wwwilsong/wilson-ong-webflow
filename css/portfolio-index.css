@@ -1,0 +1,223 @@
+/* ============================================
+   v1
+   PORTFOLIO INDEX — sticky hero left, scrollable grid right
+   ============================================ */
+
+html,
+body {
+  overscroll-behavior: none;
+}
+
+.pi-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  min-height: 100vh;
+}
+
+/* LEFT: sticky hero */
+
+.pi-hero-column {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.pi-hero-link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.pi-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.35s;
+}
+
+.pi-hero-cta {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Minion Pro', Georgia, serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.25s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.pi-hero-column:hover .pi-hero-cta {
+  opacity: 1;
+}
+
+/* RIGHT: scrollable content column */
+
+.pi-content-column {
+  background: #ffffff;
+  padding: 96px 40px 80px;
+  box-sizing: border-box;
+}
+
+/* HEADER — updates on hover */
+
+.pi-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.pi-arrow-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0;
+  overflow: visible;
+  margin: 0;
+}
+
+.pi-nav-arrow {
+  font-family: 'Minion Pro', Georgia, serif;
+  font-size: 16px;
+  color: #999;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: color 0.2s, opacity 0.2s;
+  line-height: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.pi-nav-arrow:hover {
+  color: #0066cc;
+  opacity: 1;
+}
+
+.pi-number-link {
+  font-family: 'Minion Pro', Georgia, serif;
+  font-size: 14px;
+  color: #333;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.pi-number-link:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.pi-title {
+  font-family: 'Minion Pro', Georgia, serif;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 0 4px 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.pi-year {
+  font-family: 'Minion Pro', Georgia, serif;
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+/* FILTER — right-aligned, styled like size selector */
+
+.pi-filter-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.pi-filter {
+  padding: 6px 8px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  font-family: 'Minion Pro', Georgia, serif;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  color: #555;
+  font-weight: normal;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  min-width: 90px;
+  text-align: right;
+}
+
+.pi-filter:focus {
+  outline: none;
+  border-bottom-color: #333;
+}
+
+/* GRID */
+
+.pi-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 6px;
+}
+
+/* PROJECT CARD */
+
+.pi-card {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.25s;
+}
+
+.pi-card.active {
+  opacity: 1;
+}
+
+.pi-card.filtered-out {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.pi-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Blue arrow overlay on card hover */
+
+.pi-card-arrow {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-family: 'Minion Pro', Georgia, serif;
+  font-size: 16px;
+  color: #0066cc;
+  opacity: 0;
+  transition: opacity 0.2s;
+  text-decoration: none;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.pi-card:hover .pi-card-arrow {
+  opacity: 1;
+}
