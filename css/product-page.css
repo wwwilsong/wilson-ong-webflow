@@ -6,7 +6,7 @@
 
 html,
 body {
-  overscroll-behavior: none;
+  overscroll-behavior: none !important;
 }
 
 .product-page {
@@ -130,7 +130,7 @@ body {
 }
 
 .product-description p {
-  margin: 0;
+  margin: 0 !important;
   font-family: 'Minion Pro', Georgia, serif;
   font-weight: normal;
 }
@@ -147,23 +147,23 @@ body {
 }
 
 .size-selector {
-  width: 100%;
-  padding: 6px 8px;
-  border: none;
-  border-bottom: 1px solid #ddd;
-  background: transparent;
-  font-family: 'Minion Pro', Georgia, serif;
-  font-size: 12px;
-  letter-spacing: 0.3px;
+  width: 100% !important;
+  padding: 6px 8px !important;
+  border: none !important;
+  border-bottom: 1px solid #ddd !important;
+  background: transparent !important;
+  font-family: 'Minion Pro', Georgia, serif !important;
+  font-size: 12px !important;
+  letter-spacing: 0.3px !important;
   cursor: pointer;
   transition: border-color 0.3s;
-  color: #555;
-  font-weight: normal;
-  margin: 0;
-  box-sizing: border-box;
-  appearance: none;
-  -webkit-appearance: none;
-  border-radius: 0;
+  color: #555 !important;
+  font-weight: normal !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  border-radius: 0 !important;
 }
 
 .size-selector:hover,

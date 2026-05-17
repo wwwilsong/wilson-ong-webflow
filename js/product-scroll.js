@@ -10,6 +10,8 @@
     // 'clip' clips identically but does not create a scroll container.
     document.body.style.overflowX = 'clip';
     document.documentElement.style.overflowX = 'clip';
+    document.body.style.overscrollBehavior = 'none';
+    document.documentElement.style.overscrollBehavior = 'none';
 
     document.querySelectorAll('.product-image').forEach(function (img, index) {
       img.addEventListener('click', function () {
