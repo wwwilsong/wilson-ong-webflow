@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wilson Ong</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     SITE HEADER — transparent, fixed full-site
+     ═══════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="nav-left">
+    <!-- hamburger goes here later -->
+  </div>
+
+  <nav class="nav-center">
+    <a href="#" class="nav-link">Home</a>
+    <a href="#store" class="nav-link">Store</a>
+    <a href="#work" class="nav-link">Work</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <div class="nav-right">
+    <button class="cart-btn">
+      Cart<span class="cart-badge" id="cartBadge" style="display:none"> (<span id="cartNumber">0</span>)</span>
+    </button>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════════
+     HERO SECTION
+     ═══════════════════════════════════════════ -->
+<section class="hero">
+
+  <!-- Background image: paste your image URL into the background-image below -->
+  <!-- Example: style="background-image: url('https://your-image-url.jpg');" -->
+  <div class="hero-bg" id="heroBg" style="background-image: url('');"></div>
+
+  <!-- Wilson Ong Logo -->
+  <div class="hero-logo">
+    <img
+      src="https://cdn.prod.website-files.com/6a0919457e10b463b92b0086/6a09673fc559e9c625d380cc_Wilson%20Logo%20Test.png"
+      alt="Wilson Ong"
+    >
+  </div>
+
+  <!-- Scroll arrow — subtle bounce, clicks to scroll to store.
+       Remove if you prefer no indicator. -->
+  <div class="scroll-arrow" onclick="document.getElementById('store').scrollIntoView({behavior:'smooth'})">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     STORE SECTION
+     ═══════════════════════════════════════════ -->
+<section class="store-section" id="store">
+  <!-- Store content goes here -->
+</section>
+
+
+<script src="js/cart.js"></script>
+</body>
+</html>

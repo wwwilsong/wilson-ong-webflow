@@ -1,0 +1,68 @@
+/* ============================================
+   v1
+   WILSON ONG - SITE HEADER
+   Transparent fixed header, full-site
+   ============================================ */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 24px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.nav-left {
+  width: 80px;
+  pointer-events: auto;
+}
+
+.nav-center {
+  display: flex;
+  gap: 48px;
+  pointer-events: auto;
+}
+
+.nav-right {
+  width: 80px;
+  display: flex;
+  justify-content: flex-end;
+  pointer-events: auto;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  transition: opacity 0.2s;
+}
+
+.nav-link:hover {
+  opacity: 0.5;
+}
+
+.cart-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  padding: 0;
+  color: inherit;
+  font-family: 'Minion Pro', Georgia, serif;
+  transition: opacity 0.2s;
+}
+
+.cart-btn:hover {
+  opacity: 0.5;
+}
+
+.cart-badge {
+  color: red;
+}

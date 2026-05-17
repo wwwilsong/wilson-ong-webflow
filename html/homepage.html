@@ -1,0 +1,63 @@
+<!-- WILSON ONG - HOMEPAGE EMBED -->
+<!-- Paste this entire block into a Webflow Embed element on the Home page -->
+
+<!-- ─── NEW CSS LINKS (add to Project Settings > Custom Code > <head>) ───
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/css/header.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/css/homepage.css">
+
+─── NEW JS LINK (add to Project Settings > Custom Code > before </body>) ───
+<script src="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/js/cart.js"></script>
+──────────────────────────────────────────────────────────────────────────── -->
+
+
+<!-- ═══ SITE HEADER ═══════════════════════════════════════════════════════
+     Transparent, fixed. Sits above everything on all pages.
+     If you have a global/master layout in Webflow, put the header there
+     so it appears on every page. Otherwise paste it on each page.
+     ═══════════════════════════════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="nav-left">
+    <!-- hamburger goes here later -->
+  </div>
+
+  <nav class="nav-center">
+    <a href="/" class="nav-link">Home</a>
+    <a href="/store" class="nav-link">Store</a>
+    <a href="/work" class="nav-link">Work</a>
+    <a href="/contact" class="nav-link">Contact</a>
+  </nav>
+
+  <div class="nav-right">
+    <button class="cart-btn">
+      Cart<span class="cart-badge" id="cartBadge" style="display:none"> (<span id="cartNumber">0</span>)</span>
+    </button>
+  </div>
+</header>
+
+
+<!-- ═══ HERO SECTION ══════════════════════════════════════════════════════
+     Full-screen, logo centred, optional background image.
+     ═══════════════════════════════════════════════════════════════════════ -->
+<section class="hero">
+
+  <!-- BACKGROUND IMAGE: paste your image URL inside url('') below -->
+  <div class="hero-bg" style="background-image: url('');"></div>
+
+  <!-- Wilson Ong Logo -->
+  <div class="hero-logo">
+    <img
+      src="https://cdn.prod.website-files.com/6a0919457e10b463b92b0086/6a09673fc559e9c625d380cc_Wilson%20Logo%20Test.png"
+      alt="Wilson Ong"
+    >
+  </div>
+
+  <!-- Scroll arrow — bounces to invite scroll, clicks to jump to store.
+       Delete this block if you don't want the arrow. -->
+  <div class="scroll-arrow" onclick="document.getElementById('store').scrollIntoView({behavior:'smooth'})">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polyline points="6 9 12 15 18 9" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+</section>

@@ -1,0 +1,83 @@
+/* ============================================
+   v1
+   WILSON ONG - HOMEPAGE
+   Hero section and scroll-snap layout
+   ============================================ */
+
+/* Scroll snap: proximity = soft pull to section edges, won't lock mid-page */
+html {
+  scroll-snap-type: y proximity;
+}
+
+/* ── HERO ─────────────────────────────────── */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+/* Background image layer — set URL via inline style on #hero-bg */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+/* Logo */
+.hero-logo {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-logo img {
+  width: clamp(280px, 40vw, 620px);
+  height: auto;
+  display: block;
+}
+
+/* Scroll arrow — subtle bob, clickable, optional */
+.scroll-arrow {
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  cursor: pointer;
+  animation: arrow-bob 2.4s ease-in-out infinite;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.scroll-arrow:hover {
+  opacity: 1;
+}
+
+.scroll-arrow svg {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+@keyframes arrow-bob {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(7px); }
+}
+
+/* ── STORE SECTION (placeholder) ─────────── */
+.store-section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  background: #ffffff;
+  position: relative;
+  /* actual store content goes here */
+}
