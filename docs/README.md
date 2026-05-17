@@ -71,16 +71,16 @@ All files are hosted on GitHub and loaded via CDN into Webflow embed elements.
 
 **CSS links** (add to Webflow custom code):
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/css/global.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/css/product-page.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/css/carousel.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/css/responsive.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/css/global.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/css/product-page.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/css/carousel.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/css/responsive.css">
 ```
 
 **JS links** (add to Webflow custom code):
 ```html
-<script src="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/js/carousel.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/js/product-scroll.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/js/carousel.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/js/product-scroll.js"></script>
 ```
 
 See [webflow-integration.md](docs/webflow-integration.md) for detailed instructions.

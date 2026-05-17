@@ -21,15 +21,15 @@ This repository provides:
 In Webflow, go to **Project Settings > Custom Code > Head Code** and add:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/css/global.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/css/product-page.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/css/carousel.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/css/responsive.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/css/global.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/css/product-page.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/css/carousel.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/css/responsive.css">
 ```
 
 For portfolio pages, also add:
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/css/portfolio-page.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/css/portfolio-page.css">
 ```
 
 ### Step 2: Add JavaScript Links
@@ -37,13 +37,13 @@ For portfolio pages, also add:
 In Webflow, go to **Project Settings > Custom Code > Footer Code** and add:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/js/carousel.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/js/product-scroll.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/js/carousel.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/js/product-scroll.js"></script>
 ```
 
 For portfolio pages, also add:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/js/portfolio.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/js/portfolio.js"></script>
 ```
 
 ### Step 3: Create Embed Elements
@@ -102,7 +102,7 @@ Push to GitHub. CDN will update automatically (may take a few minutes for cache)
 
 Files are automatically served from GitHub:
 ```
-https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/css/global.css
+https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/css/global.css
 ```
 
 **How it works:**
@@ -112,7 +112,7 @@ https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/css/global.css
 
 To force an immediate cache clear:
 ```
-https://purge.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/css/global.css
+https://purge.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@main/css/global.css
 ```
 
 ### Version Pinning (Optional)
@@ -120,7 +120,7 @@ https://purge.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@main/css/global.css
 For production stability, you can pin to a specific release:
 ```html
 <!-- Instead of @main (always latest): -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wilsonong/wilson-ong-webflow@v1.0.0/css/global.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/wwwilsong/wilson-ong-webflow@v1.0.0/css/global.css">
 ```
 
 ## Troubleshooting
