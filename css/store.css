@@ -6,7 +6,6 @@
 
 /* ── STORE SECTION ────────────────────────── */
 .store-section {
-  min-height: 100vh;
   scroll-snap-align: start;
   position: relative;
 
@@ -15,16 +14,16 @@
      IMAGE:  swap background to:
              url('YOUR-IMAGE-URL') center / cover no-repeat
      ────────────────────────────────────────── */
-  background: #f0f0f0;
+  background: url('https://cdn.prod.website-files.com/6a0919457e10b463b92b0086/6a09790e87c58ed94d450d7f_Screenshot-2026-05-17-at-8.11.14%E2%80%AFPM.png') center / cover no-repeat;
 
-  padding: 120px 10px 40px; /* top clears fixed header */
+  padding: 120px 40px 0; /* top clears fixed header */
 }
 
 /* ── PRODUCT GRID ─────────────────────────── */
 .store-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
+  gap: 40px;
 }
 
 /* Responsive column steps */
@@ -70,7 +69,6 @@
 
 .product-img-hover {
   opacity: 0;
-  transition: opacity 0.35s ease;
 }
 
 .product-card:hover .product-img-hover {
@@ -100,4 +98,13 @@
   font-size: 11px;
   letter-spacing: 0.04em;
   margin: 0;
+}
+
+/* ── STORE FOOTER ─────────────────────────── */
+.store-footer {
+  text-align: center;
+  padding: 40px 0 12px;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  line-height: 1;
 }
