@@ -1,0 +1,103 @@
+/* ============================================
+   v1
+   WILSON ONG - STORE PAGE
+   Product grid with hover image swap
+   ============================================ */
+
+/* ── STORE SECTION ────────────────────────── */
+.store-section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+
+  /* ── BACKGROUND ──────────────────────────────
+     COLOUR: set any hex/rgb value below
+     IMAGE:  swap background to:
+             url('YOUR-IMAGE-URL') center / cover no-repeat
+     ────────────────────────────────────────── */
+  background: #f0f0f0;
+
+  padding: 120px 10px 40px; /* top clears fixed header */
+}
+
+/* ── PRODUCT GRID ─────────────────────────── */
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+/* Responsive column steps */
+@media (max-width: 1200px) {
+  .store-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 900px) {
+  .store-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+  .store-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 400px) {
+  .store-grid { grid-template-columns: 1fr; }
+}
+
+/* ── PRODUCT CARD ─────────────────────────── */
+.product-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* ── IMAGE AREA ───────────────────────────── */
+.product-card-images {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+}
+
+.product-img-default,
+.product-img-hover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-img-hover {
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.product-card:hover .product-img-hover {
+  opacity: 1;
+}
+
+/* ── CARD INFO ────────────────────────────── */
+.product-card-info {
+  padding: 10px 10px 12px;
+  text-align: center;
+}
+
+.product-card-name {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  margin: 0 0 2px;
+}
+
+.product-card-material {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  margin: 0 0 4px;
+  opacity: 0.5;
+}
+
+.product-card-price {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
