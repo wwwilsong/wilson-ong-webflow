@@ -17,27 +17,26 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', function() {
     if (!detailsColumn) return;
 
-    // Get the details column's position in the viewport
-    const detailsRect = detailsColumn.getBoundingClientRect();
+    const detailsTop = detailsColumn.offsetTop;
+    const detailsHeight = detailsColumn.offsetHeight;
     const viewportHeight = window.innerHeight;
+    const scrollY = window.scrollY || window.pageYOffset;
 
-    // Calculate how far down the details column is visible in viewport
-    // When details column enters viewport (top = viewportHeight), start at image 0
-    // When details column exits viewport (top = 0), show last image
-    
-    const detailsScrollStart = detailsRect.top;
-    const detailsHeight = detailsRect.height;
-    
-    // Progress: 0 when details just enters viewport, 1 when it exits
-    let scrollProgress = (viewportHeight - detailsScrollStart) / (viewportHeight + detailsHeight);
+    // Start progress when details column enters viewport
+    const scrollStart = detailsTop - viewportHeight;
+    // End progress when details column fully exits viewport
+    const scrollEnd = detailsTop + detailsHeight;
+
+    // Calculate how far we've scrolled within the range
+    let scrollProgress = (scrollY - scrollStart) / (scrollEnd - scrollStart);
     scrollProgress = Math.max(0, Math.min(1, scrollProgress));
 
     // Convert progress to image index (0 to totalImages-1)
     const imageIndex = scrollProgress * (totalImages - 1);
-    
+
     // Calculate Y offset as percentage
     const yOffset = imageIndex * 100;
-    
+
     imageContainer.style.transform = `translateY(-${yOffset}%)`;
   }, false);
 
