@@ -6,7 +6,6 @@
 
 /* ── STORE SECTION ────────────────────────── */
 .store-section {
-  scroll-snap-align: start;
   position: relative;
 
   /* ── BACKGROUND ──────────────────────────────
