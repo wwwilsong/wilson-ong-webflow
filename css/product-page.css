@@ -1,5 +1,5 @@
 /* ============================================
-   v2
+   v3
    PRODUCT PAGE STYLES
    Layout, image sections, and product details
    ============================================ */
@@ -98,36 +98,36 @@
 
 .product-description {
   font-size: 12px;
-  line-height: 1.8;
+  line-height: 1.5;
   color: #555;
   margin-bottom: 30px;
   font-weight: normal;
   font-family: 'Minion Pro', Georgia, serif;
+  text-align: left;
+}
+
+.desc-section {
+  margin-bottom: 18px;
+}
+
+.desc-section:last-child {
+  margin-bottom: 0;
+}
+
+.desc-label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 3px;
+  font-family: 'Minion Pro', Georgia, serif;
 }
 
 .product-description p {
-  margin: 0 0 10px 0;
-  font-family: 'Minion Pro', Georgia, serif;
-  font-weight: normal;
-}
-
-.product-description ul {
   margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.product-description li {
-  margin: 4px 0;
-  list-style: none;
   font-family: 'Minion Pro', Georgia, serif;
   font-weight: normal;
-  font-size: 12px;
-}
-
-.product-description li:before {
-  content: "· ";
-  margin-right: 6px;
 }
 
 .product-options {
