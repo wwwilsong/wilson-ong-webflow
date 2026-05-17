@@ -1,5 +1,5 @@
 /* ============================================
-   v2
+   v2 — 2026-05-17
    PRODUCT PAGE - STICKY DETAILS + SCROLL IMAGES
    Right column sticks in place; left images scroll past naturally.
    ============================================ */

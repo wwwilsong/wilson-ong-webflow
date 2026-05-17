@@ -1,5 +1,5 @@
 /* ============================================
-   v1
+   v1 — 2026-05-17
    CAROUSEL LIGHTBOX MODULE
    Shared carousel logic for product and portfolio
    ============================================ */
